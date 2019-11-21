@@ -20,12 +20,12 @@ const groupSchema = new Schema({
       "sep",
       "oct",
       "nov",
-      "dic"
+      "dec"
     ],
     required: true
   },
   year: { type: String, required: true },
-  googleSpreadsheetId: { type: String, required: true }
+  spreadsheetId: { type: String, required: true }
 });
 
 module.exports = model("Group", groupSchema);
